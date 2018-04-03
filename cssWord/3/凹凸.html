@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>凹凸</title>
+    <style>
+        .wrap{
+            width: 200px;
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 50px;
+        }
+        .box1, .box2{
+            display: inline-block;
+            width: 0;
+            font-size: 14px;
+            line-height: 18px;
+            margin: 35px;
+            color: #fff;
+
+        }
+        .box1:before,
+        .box2:before {
+            outline: 2px solid #cd0000;
+            font-family: Consolas, Monaco, monospace;
+        }
+        .box1:before{
+            content: "love你love";
+        }
+        .box2:before{
+            content: "我love你";
+        }
+        span{
+            outline: 2px solid #cd0000;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <span>我width我我我我我我我我我</span>
+</div>
+
+<div class="wrap">
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+</div>
+</body>
+</html>
