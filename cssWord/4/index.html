@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>替换</title>
+    <style>
+        div{
+            background: #ccc;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+        img{
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+        }
+        img::after {
+            /* 生成 alt 信息 */
+            content: attr(alt);
+            /* 尺寸和定位 */
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0,0,0,.5);
+            transform: translateY(100%);
+            /* 来点过渡动画效果 */
+            transition: transform .2s;
+        }
+        img:hover::after {
+            /* alt 信息显示 */
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img alt="123">
+</div>
+<div>
+    <img alt="123" src="https://www.baidu.com/img/bd_logo1.png?where=super">
+</div>
+</body>
+</html>
