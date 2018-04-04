@@ -1,3 +1,5 @@
+### 《css世界》1-3章
+
 ### 未定义行为
 * 在规范描述以外的场景
 
@@ -7,8 +9,8 @@
 ### 盒模型
 * 块级元素：一个水平流上只能单独显示一个元素，多个块级元素则换行显示
 * 内联元素：是可以和文字在一行显示
-    * 外在盒子
-    * 内在盒子
+    * 外在盒子：控制元素是否可以和文字在一行显示
+    * 内在盒子：控制元素是否可以有宽高
         * content box：默认width作用在这
         * padding box
         * border box
@@ -58,56 +60,32 @@
         元素的百分比计算是有区别的，区别在于绝对定位的宽高百分比计算是相对于 padding box 的，也就是
         说会把 padding 大小值计算在内，但是，非绝对定位元素则是相对于 content box 计算的。
 
-### max-，min
-* 避免图片在移动端展示过大`div {height: 100%;position: absolute;} `
+### max-width、max-height、min-width、min-height
+* 适合自适应或流体布局（与百分比配合）
+* 避免图片在移动端展示过大
 ```
-max-width: 100%;
- height: auto!important; 
+img{
+    max-width: 100%;
+    height: auto!important; 
+}   
 ```
-* 超越最大
+* min-width/min-height 的初始值是 auto，max-width/max-height的初始值是none
+* 超越important(例如max-height会覆盖height，无关权重，)
+* 超越最大（最大最小同时作用，较大的值会覆盖较小的值）
 ```
 .container {
- min-width: 1400px;
- max-width: 1200px;
+     min-width: 1400px;
+     max-width: 1200px;
  } 
 
 ```
-* max-height代替height变化
-
-### 替换元素
-基于伪元素的图片内容生成技术。初始图片 src 没有，因此，::before 和::after 可以
-                 生效，我们就可以把 alt 属性值通过 content 属性呈现出来
-                 点击按钮给图片添
-                 加一个 src 地址时，图片从普通元素变成替换元素，原本都还
-                 支持的::before 和::after 此时全部无效，此时再 hover 图
-                 片，是不会有任何信息出现的
-                 
-                 
-```
-img::after {
- /* 生成 alt 信息 */
- content: attr(alt);
- /* 尺寸和定位 */
- position: absolute; bottom: 0;
- width: 100%;
- background-color: rgba(0,0,0,.5);
- transform: translateY(100%);
- /* 来点过渡动画效果 */
- transition: transform .2s;
-}
-img:hover::after {
- /* alt 信息显示 */
- transform: translateY(0);
-} 
-```
-
-content: url(laugh-tear.png); 替换图片
-:empty 选择器，没有内容的元素
-
-       
-
+* 没有固定高度的情况时使用max-height代替height制作动画效果
        
 ### 内联元素
+* “外在盒子”是内联盒子的元素。如inline-block、inline-table、inline等
+* 可以和文字在一行显示
+* 幽灵空白节点：存在于每个“行框盒子”前面，同时具有该元素的字体和行高属性的 0 宽度的内联盒
+    （空白的行内块元素会撑开父级，父级被撑开的高度是父级的行高）
 
 
 #### 总结小技巧
@@ -116,4 +94,5 @@ content: url(laugh-tear.png); 替换图片
 * 一行居中，两行居左（包裹性）
 * 凹凸（首选最小宽度）
 * 轮播图（最大宽度）
+* 高度100%
 * 避免图片在移动端展示过大
