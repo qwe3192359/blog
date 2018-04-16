@@ -26,6 +26,28 @@
 ### margin
 * 元素的尺寸表现符合“充分利用可用空间”，才可以通过 margin 改变尺寸。
 * margin合并
+* margin负值的利用
+* margin:auto的利用，右对齐、居中（水平方向），
+* 配合定位做水平垂直居中
+
+### border
+#### border-width支持的关键字
+* thin：薄薄的，等同于 1px。
+* medium（默认值）：薄厚均匀，等同于 3px。
+* thick：厚厚的，等同于 4px。
+#### border-style
+* none：默认值
+* solid：实线
+* dashed：虚线
+* dotted：虚点边框（ie8做圆点）
+* double：两根实线
+* 其他：inset（内凹）、outset（外凸）、groove（沟槽）、ridge（山脊）
+#### border-color
+* color：默认值是字体的颜色
+* transparent：透明
+    * 右下方 background 定位的技巧   
+    * 增加点击区域大小
+    * 三角等图形绘制
        
 
                  
