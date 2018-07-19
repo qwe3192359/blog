@@ -25,7 +25,21 @@
 
 #### Class 与 Style 绑定
 ##### 对象语法
-* 
-#### 数组语法
+* 属性是否存在取决于数据属性是否为真
+` v-bind:class="{ active: isActive, 'text-danger': hasError }" `
+##### 数组语法
+` v-bind:class="[activeClass, errorClass]" `
+* 三元表单
+`<div v-bind:class="[isActive ? activeClass : '', errorClass]"></div>`
+##### 绑定内联样式
+* 对象语法
+* 数组语法
+* 多重值
+
+#### 条件渲染
+* v-if、v-else-if、v-else
+* v-show
+
+#### 列表渲染
          
           
