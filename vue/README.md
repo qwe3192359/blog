@@ -4,7 +4,7 @@
 #### 声名式渲染el
 * css选择器
 * HTMLElement 实例
-* {{}}或v-bind绑定数据和DOM
+* {{}}或v-bind绑定数据和DOM 
 #### 条件
 * v-if
 #### 列表
