@@ -251,6 +251,13 @@ vm.selected.number // => 123
 <!-- 在“change”时而非“input”时更新 -->
 <input v-model.lazy="msg" >
 ```
+#### 组件
+* 组件也是vue实例，和new vue()接收相同的选项，除了el等根实例特有的
+* 组件data必须是一个函数
+##### 组件注册
+* 全局注册
+* 局部注册
+##### 通过 Prop 向子组件传递数据
 
     
     
