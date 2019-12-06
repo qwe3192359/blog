@@ -12,6 +12,9 @@
 #### js博客
 * [for in 、for of、forEach的区别](./js/for...in、for...of.md)
 * [在iframe里就重定向顶级窗口](./js/在iframe里就重定向顶级窗口.md)
+* [this的指向](./js/this.md)
+#### 前端相关
 * [目录的写法](./other/目录的写法.md)
+
 
           
