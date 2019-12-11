@@ -1,9 +1,10 @@
 ### this:
-#### this 是在运行时进行绑定的，并不是在编写时绑定，它的上下文取决于函数调用时的各种条件。this 的绑定
+* this是JavaScript的关键字之一。它是对象自动生成的一个内部对象，只能在对象内部使用。随着函数使用场合的不同，this的值会发生变化
+* this是在运行时进行绑定的，并不是在编写时绑定，它的上下文取决于函数调用时的各种条件。this的绑定
 和函数声明的位置没有任何关系，只取决于函数的调用方式。
 
-#### 默认绑定：this 为 window
-函数调用模式：函数直接使用不带任何修饰的函数引用进行调用。
+#### 默认绑定：this 指向 window
+函数调用模式：函数直接使用不带任何修饰的函数引用。
 ```
 function fun(){
     console.log(this.a)
@@ -66,8 +67,8 @@ function foo() {
     console.log( this.a );
 }
 function doFoo(fn) {
-// fn其实引用的是foo
-fn(); // <-- 调用位置！
+    // fn其实引用的是foo
+    fn(); // <-- 调用位置！
 }
 var obj = {
     a: 2,
@@ -78,42 +79,128 @@ doFoo( obj.foo ); // "oops, global"
 
 ```
 #### 显式绑定
-##### apply()、call()：函数的this会指向第一个参数
-##### apply():
+##### apply()、call()：this会指向第一个参数
 * 第一个参数是一个对象，它们会把这个对象绑定到this 
-* 第二个参数：一个参数数组
-
-
-apply可以将一个数组转为函数参数
-apply()：在特定的作用域中调用函数，等于设置函数体内this对象的值
-后面的参数是argmuments list
+如果传入了一个原始值（字符串类型、布尔类型或者数字类型）来当作this 的绑定对象，这个原始值会被转换成它的对象
+形式（也就是new String(..) 、new Boolean(..) 或者new Number(..) ）
+* 第二个参数：
+    * apply():一个参数数组
+    * call()：其余参数都是直接传递给函数
 ```
-将数组转为函数的参数
-
-function f(x, y, z) {
-// ...
+function foo() {
+    console.log( this.a );
 }
-var args = [0, 1, 2];
-f.apply(null, args);
+var obj = {
+    a:2
+};
+foo.call( obj ); // 2
 ```
+##### 硬绑定
+```
+function foo() {
+    console.log( this.a );
+}
+var obj = {
+    a:2
+};
+var bar = function() {
+    foo.call( obj );
+};
+bar(); // 2
+setTimeout( bar, 100 ); // 2
+// 硬绑定的bar不可能再修改它的this
+bar.call( window ); // 2
+```
+##### bind()
+* Function.prototype.bind()
+* bind() 方法创建一个新的函数，在 bind() 被调用时，这个新函数的 this 被指定为 bind() 的第一个参数，而其余参数将作为新函数的参数，供调用时使用。
+// 简单的辅助绑定函数
+function bind(fn, obj) {
+    return function() {
+        return fn.apply( obj, arguments );
+    };
+}
 
-参数：第一个参数是在其中运行函数的作用域，第二个参数是参数数组
-call()：和apply一样，就是接收参数的方式不同，第一个参数一样，其余参数都是直接传递给函数
-bind()
+
 #### new绑定：this指向新生成的对象
 构造器函数调用模式：
 1. 创建（或者说构造）一个全新的对象。
 2. 这个新对象会被执行[[原型]]连接。
 3. 这个新对象会绑定到函数调用的this 。
 4. 如果函数没有返回其他对象，那么new 表达式中的函数调用会自动返回这个新对象。
+```
+function foo(a) {
+    this.a = a;
+}
+var bar = new foo(2);
+console.log( bar.a ); // 2
 
+```
 
-#### 严格模式、箭头函数，this由函数的调用决定
+#### 优先级
+new绑定>显式绑定>隐式绑定>默认绑定
+
+#### 严格模式
+如果使用严格模式（strict mode ），那么全局对象将无法使用默认绑定，因此this 会绑定到undefined ：
+```
+函数内部严格模式不影响
 function foo() {
-console.log( this.a );
+    console.log( this.a );
 }
 var a = 2;
 (function(){
-"use strict";
-foo(); // 2
+    "use strict";
+    foo(); // 2
 })();
+```
+#### 箭头函数：根据外层（函数或者全局）作用域来决定this
+* 箭头函数的绑定无法被修改
+```
+function foo() {
+    // 返回一个箭头函数
+    return (a) => {
+        //this继承自foo()
+        console.log( this.a );
+    };
+}
+var obj1 = {
+    a:2
+};
+var obj2 = {
+    a:3
+};
+var bar = foo.call( obj1 );
+bar.call( obj2 ); // 2, 不是3！
+
+```
+
+#### 常见问题
+```
+var x = 10;
+var obj = {
+    x: 20,
+    f: function(){
+        console.log(this.x);        // ?
+        var foo = function(){ 
+            console.log(this.x);    
+            }
+        foo();                      // ?
+    }
+};
+obj.f();
+答案 ： 20 10
+```
+```
+function foo(arg){
+    this.a = arg;
+    return this
+};
+
+var a = foo(1);
+var b = foo(10);
+
+console.log(a.a);    // ?
+console.log(b.a);    // ?
+答案 ： undefined 10
+```
+
