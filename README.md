@@ -5,9 +5,9 @@
 * vue常用
 * react常用
 #### css
+* [文本](./css/1.文本.md)
 * flex
 * grid
-* 文字
 * 背景
 * 表格
 * 表单
