@@ -11,3 +11,14 @@ overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 多行文字超出显示省略号 
 overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
 ```
+
+```
+一行文字居中，多行文字居左
+.box {
+ text-align: center;
+}
+.content {
+ display: inline-block;
+ text-align: left;
+} 
+```
