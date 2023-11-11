@@ -1,4 +1,0 @@
-revert让当前元素的样式还原成浏览器内置的样式
-inherit 继承
-initial 最初的
-unset 一个属性定义了unset值，如果该属性是默认继承属性，该值等同于inherit，如果该属性是非继承属性，该值等同于initial
