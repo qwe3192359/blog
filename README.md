@@ -19,6 +19,8 @@
   * 轮廓
   * 阴影
   * 渐变
+* 过渡
+* 动画
 #### css相关
 * sass
 * TailwindCSS 
