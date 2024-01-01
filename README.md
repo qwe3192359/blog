@@ -7,8 +7,7 @@
 #### css
 * [基础](./css/1.基础.md)
 * [文本](./css/2.文本.md)
-* em（矢量图大小）、rem、ex(x的高度)、ch(0的宽度，配合等宽字体)
-* flex
+* [flex布局](./css/6.flex.md)
 * grid
 * 背景
 * 表格
