@@ -11,14 +11,14 @@ overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 多行文字超出显示省略号 
 overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
 ```
-
+flex
 ```
-一行文字居中，多行文字居左
-.box {
- text-align: center;
-}
-.content {
- display: inline-block;
- text-align: left;
-} 
+两端对齐：justify-content: space-between;
+水平居中：justify-content: center;
+垂直居中：align-items: center;
+垂直排列：flex-direction: column;
+
+不会放大和缩小：flex: none;
+子元素平分剩余空间：flex-grow: 1;
+子元素不缩小：flex-shrink: 0;
 ```

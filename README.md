@@ -10,7 +10,6 @@
 * [flex布局](./css/6.flex.md)
 * grid
 * 背景
-* 表格
 * 表单
 * 选择器
 * 装饰
@@ -22,6 +21,7 @@
 * 动画
 #### css相关
 * sass
+* postcss
 * TailwindCSS 
 #### js
 * 基本数据类型
@@ -65,6 +65,7 @@
 * TypeScript
 * vue
   * vue-router
+  * vue-use
   * element-ui
   * element-plus
   * Ant Design of Vue
@@ -78,9 +79,15 @@
   * lodash
   * ECharts
   * AntV-g6
+  * Day.js
+* leaflet
 * webgl
   * three.js
   * cesium
+* Vitest
+* Semantic UI
+* tesseract.js 图文识别
+* monaco-editor 在线代码编辑器
 #### 前端相关
 * git
 * node
