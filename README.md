@@ -5,26 +5,26 @@
 * vue常用
 * react常用
 #### css
-* [基础](./css/1.基础.md)
-* [文本](./css/2.文本.md)
-* [flex布局](./css/6.flex.md)
-* grid
-* 背景
-* 表单
-* 选择器
+* [基础](./1.css/1.基础.md)
+* [文本](./1.css/2.文本.md)
+* [背景](./1.css/3.背景.md)
 * 装饰
   * 边框
   * 轮廓
   * 阴影
   * 渐变
-* 过渡
+* [表单](./1.css/5.表单.md)
+* [flex](./1.css/6.flex.md)
+* [grid](./1.css/7.grid.md)
+* [过渡](./1.css/10.过渡.md)
 * 动画
+* [选择器](./1.css/20.选择器.md)
 #### css相关
 * sass
 * postcss
 * TailwindCSS 
 #### js
-* 基本数据类型
+* 数据类型
   * 判断
   * 相互转换
   * 是否相等
@@ -63,6 +63,7 @@
 #### js相关
 * es6
 * TypeScript
+* node
 * vue
   * vue-router
   * vue-use
@@ -80,14 +81,18 @@
   * ECharts
   * AntV-g6
   * Day.js
+  * D3.js
+  * antv
 * leaflet
 * webgl
   * three.js
   * cesium
+  * BabylonJs
 * Vitest
 * Semantic UI
 * tesseract.js 图文识别
 * monaco-editor 在线代码编辑器
+* OpenLayer
 #### 前端相关
 * git
 * node
@@ -95,7 +100,8 @@
 * webpack、vite
 * nginx
 * 小程序
-* 资源
+* uniapp
+* websocket
 #### JAVA
 #### JAVA相关
 * spring
