@@ -6,18 +6,25 @@
 * react常用
 #### css
 * [基础](./1.css/1.基础.md)
+* 布局
+  * 定位
+  * display
+  * [flex](./1.css/6.flex.md)
+  * [grid](./1.css/7.grid.md) 
 * [文本](./1.css/2.文本.md)
-* [背景](./1.css/3.背景.md)
-* 装饰
+* 外观
+  * [背景](./1.css/3.背景.md)
   * 边框
+  * 圆角
   * 轮廓
   * 阴影
-  * 渐变
-* [表单](./1.css/5.表单.md)
-* [flex](./1.css/6.flex.md)
-* [grid](./1.css/7.grid.md)
-* [过渡](./1.css/10.过渡.md)
+  * 遮罩
+* 表格和表单
 * 动画
+  * [过渡](./1.css/10.过渡.md)
+  * 动画
+* 2D、3D转换
+* 颜色
 * [选择器](./1.css/20.选择器.md)
 #### css相关
 * sass
@@ -107,16 +114,6 @@
 * spring
 * mysql
 * redis
-#### 《css世界》笔记
-* [1-3章](./cssWord/3/README.md)
-* [4章](./cssWord/4/README.md)
-* [5章](./cssWord/5/README.md)
-#### css博客
-* [css空格处理](./css/css空格处理.md)
-* [css过渡](./css/css过渡.md)
-* [css选择器小技巧](./css/css选择器巧用.md)
-* [nth-child(n)的用法](./css/nth-child(n).md)
-* [垂直居中](./css/垂直居中.md)
 #### js博客
 * [for in 、for of、forEach的区别](./js/for...in、for...of.md)
 * [在iframe里就重定向顶级窗口](./js/在iframe里就重定向顶级窗口.md)
