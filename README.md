@@ -1,31 +1,27 @@
 ### 目录
 #### css
-* css常用
-* [基础](./1.css/1.基础.md)
-* 布局
-  * width、height
-  * content
-  * padding
-  * margin
-  * float
-  * overflow
-  * 定位
-  * z-index 
-  * display
-  * [flex](./1.css/6.flex.md)
-  * [grid](./1.css/7.grid.md) 
+* [css常用](./1.css/常用css.md)
+* width、height
+* display
+* content
+* padding
+* margin
+* float
+* overflow
+* 定位
+* z-index 
+* [flex](./1.css/6.flex.md)
+* [grid](./1.css/7.grid.md) 
 * [文本](./1.css/2.文本.md)
-* 外观
-  * [背景](./1.css/3.背景.md)
-  * 边框
-  * 圆角
-  * 轮廓
-  * 阴影
-  * 遮罩
+* [背景](./1.css/3.背景.md)
+* 边框
+* 圆角
+* 轮廓
+* 阴影
+* 遮罩
 * 表格和表单
+* [过渡](./1.css/10.过渡.md)
 * 动画
-  * [过渡](./1.css/10.过渡.md)
-  * 动画
 * 2D、3D转换
 * 颜色
 * [选择器](./1.css/20.选择器.md)
