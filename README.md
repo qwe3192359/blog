@@ -1,13 +1,25 @@
 ### 目录
 #### css
+* 全局关键值
 * [css常用](./1.css/常用css.md)
 * 流、
 * em、vw、vh
-* width、height
+* width
+  * min-content
+  * fit-content
+* height
+* max-width
+  * 设置图片最大宽度
 * display
 * content
+  * 替换元素非替换元素的区别src、content
 * padding
+  * 相对于宽度计算
 * margin
+  * 负值
+  * auto实现居中、右对齐
+  * 与定位共同设置垂直居中
+* box-sizing
 * float
 * overflow
 * 定位
@@ -15,18 +27,44 @@
 * [flex](./1.css/6.flex.md)
 * [grid](./1.css/7.grid.md) 
 * [文本](./1.css/2.文本.md)
+  * 基线，字母x的下边缘
+  * 
 * [背景](./1.css/3.背景.md)
 * 边框
+  * solid:实现，dashed:虚线
+  * 默认颜色使用color颜色
+  * 默认大小3px
 * 圆角
 * 轮廓
 * 阴影
 * 遮罩
-* 表格和表单
+* clip
+* clip-path
+  * 实现不规则图形
+* 表格
+* 表单
+  * label的for属性和表单的id
+* 光标状态
+* 指向事件pointer-events
+* 滚动条
 * [过渡](./1.css/10.过渡.md)
 * 动画
-* 2D、3D转换
+* 2D
+  * 旋转
+  * 平移
+* 3D转换
 * 颜色
+* filter
 * [选择器](./1.css/20.选择器.md)
+* 伪元素
+* 伪类
+* 自适应与响应式
+  * meta设置
+  * 媒体查询
+* 替换元素
+  * object-fit
+  * object-position
+  * tabindex
 #### css相关
 * sass
 * postcss
