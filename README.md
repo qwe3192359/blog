@@ -4,19 +4,22 @@
 * [基础](./1.css/基础.md)
 * [长度单位](./1.css/长度单位.md)
   * em、vw、vh
-* [width](./1.css/width.md)
-  * min-content
-  * fit-content
-* [height](./1.css/height.md)
-* [max-width](./1.css/width.md)
-  * 设置图片最大宽度
+* [宽高](./1.css/width.md)
+  * width: auto;
+    * 充分利用可用空间
+    * fit-content包裹
+    * min-content收缩最小
+  * max-width设置图片最大宽度
+  * box-sizing改变宽高作用细节
+  * 宽高百分比计算给予内容区域，定位宽高计算相对于padding box
+  * height:100%;父级得有生效的高度值
 * [display](./1.css/display.md)
 * [块级元素](./1.css/块级元素.md)
 * [内联元素](./1.css/内联元素.md)
 * [替换元素](./1.css/替换元素.md)
   * object-fit
   * object-position
-  * tabindex
+* 焦点元素tabindex
 * [content](./1.css/content.md)
   * 替换元素非替换元素的区别src、content
 * [padding](./1.css/padding.md)
@@ -29,6 +32,8 @@
 * [float](./1.css/float.md)
 * [overflow](./1.css/overflow.md)
 * [position](./1.css/position.md)
+  * absolute、fixed大小由位置决定
+
 * z-index 
 * [flex](./1.css/flex.md)
 * [grid](./1.css/grid.md) 
