@@ -2,7 +2,6 @@
 #### css
 * [常用](./1.css/css常用.md)
 * [基础](./1.css/基础.md)
-* [长度单位](./1.css/长度单位.md)
   * em、vw、vh
 * [宽高](./1.css/width.md)
   * width: auto;
@@ -16,10 +15,14 @@
 * [display](./1.css/display.md)
 * [块级元素](./1.css/块级元素.md)
 * [内联元素](./1.css/内联元素.md)
+  * line-height
+  * vertical-align
+    * baseline：基线对齐，默认值，行内元素基线为x下边缘，替换元素为自身的下边缘
+    * 只支持内联元素和table-cell元素
 * [替换元素](./1.css/替换元素.md)
   * object-fit
   * object-position
-* 焦点元素tabindex
+
 * [content](./1.css/content.md)
   * 替换元素非替换元素的区别src、content
 * [padding](./1.css/padding.md)
@@ -31,8 +34,10 @@
 * box-sizing
 * [float](./1.css/float.md)
 * [overflow](./1.css/overflow.md)
+  * html、textarea默认可以产生滚动条
 * [position](./1.css/position.md)
   * absolute、fixed大小由位置决定
+  * 
 
 * z-index 
 * [flex](./1.css/flex.md)
@@ -54,9 +59,11 @@
 * [表格](./1.css/表格.md)
 * [表单](./1.css/表单.md)
   * label的for属性和表单的id
+* 焦点元素
+  * tabindex
 * [光标状态](./1.css/常用css.md)
 * [pointer-events指向事件](./1.css/常用css.md)
-* [滚动条](./1.css/常用css.md)
+* [滚动条](./1.css/滚动条.md)
 * [transition：过渡](./1.css/transition：过渡.md)
 * [动画](./1.css/常用css.md)
 * [transform：2D、3D转换](./1.css/transform.md)
@@ -107,6 +114,9 @@
   * navigator
   * screen
 * DOM
+  * clientWidth:包括padding，不包括border
+  * offsetWidth:包含padding和border
+  * 
 * 事件
 * canvas
 * 数据储存
