@@ -69,6 +69,7 @@
 * [transform：2D、3D转换](./1.css/transform.md)
   * 旋转
   * 平移
+* pointer-events
 * [color](./1.css/color.md)
 * [filter](./1.css/filter.md)
 * [选择器](./1.css/选择器.md)
@@ -125,45 +126,51 @@
 #### js相关
 * es6
 * TypeScript
-* node
+* websocket
 * vue
   * vue-router
+  * pinia
   * vue-use
-  * element-ui
   * element-plus
-  * Ant Design of Vue
   * vant
 * react
   * Ant Design
 * selvet
 * jQuery
+* mock.js
 * 常用插件
   * axios
   * lodash
   * ECharts
-  * AntV-g6
+  * antv
   * Day.js
   * D3.js
-  * antv
-* leaflet
-* webgl
+* webgl、gis
+  * leaflet
   * three.js
   * cesium
   * BabylonJs
-* Vitest
-* Semantic UI
-* tesseract.js 图文识别
+  * OpenLayer
 * monaco-editor 在线代码编辑器
-* OpenLayer
+* 文件操作
+  * file-saver
+  * tesseract.js 图文识别
+  * sheet.js   xlsx
+  * mammoth.js word
 #### 前端相关
-* git
-* node
+* git、svn
+* Node、Bun、Deno
 * npm、pnpm、yarn
-* webpack、vite
-* nginx
+* webpack、vite、turbo
+* nginx、tomcat、apache
 * 小程序
-* uniapp
-* websocket
+* uniapp、flutter
+* vs code插件
+  * live-server
+#### 前端工程化
+* ESLint 
+* Perttier
+* Vitest
 #### JAVA
 #### JAVA相关
 * spring
@@ -173,6 +180,6 @@
 * [for in 、for of、forEach的区别](./js/for...in、for...of.md)
 * [在iframe里就重定向顶级窗口](./js/在iframe里就重定向顶级窗口.md)
 * [this的指向](./js/this.md)
-#### 前端相关
+#### 其他
 * [目录的写法](./other/目录的写法.md)
 * 面试题
