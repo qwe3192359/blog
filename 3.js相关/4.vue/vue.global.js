@@ -6752,6 +6752,7 @@ Server rendered element contains fewer child nodes than client vdom.`
   function createHydrationRenderer(options) {
     return baseCreateRenderer(options, createHydrationFunctions);
   }
+  // 创建渲染器options：一些方法，createHydrationFns应该是服务器渲染需要
   function baseCreateRenderer(options, createHydrationFns) {
     const target = getGlobalThis();
     target.__VUE__ = true;
@@ -8175,9 +8176,9 @@ Server rendered element contains fewer child nodes than client vdom.`
       );
     }
     return {
-      render,
-      hydrate,
-      createApp: createAppAPI(render, hydrate)
+      render,//渲染函数
+      hydrate,//同构渲染？
+      createApp: createAppAPI(render, hydrate)//调研此函数生成实例
     };
   }
   function resolveChildrenNamespace({ type, props }, currentNamespace) {
@@ -11027,9 +11028,11 @@ Component that was made reactive: `,
   const rendererOptions = /* @__PURE__ */ extend({ patchProp }, nodeOps);
   let renderer;
   let enabledHydration = false;
+  // renderer存在就返回不存在就新建
   function ensureRenderer() {
     return renderer || (renderer = createRenderer(rendererOptions));
   }
+  // 服务器渲染
   function ensureHydrationRenderer() {
     renderer = enabledHydration ? renderer : createHydrationRenderer(rendererOptions);
     enabledHydration = true;
@@ -11067,6 +11070,7 @@ Component that was made reactive: `,
     };
     return app;
   };
+  // 服务器渲染
   const createSSRApp = (...args) => {
     const app = ensureHydrationRenderer().createApp(...args);
     {
