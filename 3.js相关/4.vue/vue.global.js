@@ -5339,6 +5339,7 @@ If this is a native custom element, make sure to exclude it from component resol
     };
   }
   let uid$1 = 0;
+  // 返回createApp函数，开始进入vue根组件
   function createAppAPI(render, hydrate) {
     return function createApp(rootComponent, rootProps = null) {
       if (!isFunction(rootComponent)) {
@@ -5348,6 +5349,7 @@ If this is a native custom element, make sure to exclude it from component resol
         warn$1(`root props passed to app.mount() must be an object.`);
         rootProps = null;
       }
+      // 创建默认APP配置
       const context = createAppContext();
       const installedPlugins = /* @__PURE__ */ new WeakSet();
       let isMounted = false;
