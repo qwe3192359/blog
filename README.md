@@ -78,22 +78,34 @@
 * [自适应与响应式](./1.css/自适应与响应式.md)
   * meta设置
   * 媒体查询
-
 #### css相关
 * sass
 * postcss
 * TailwindCSS 
 #### js
 * 数据类型
-  * 判断
-  * 相互转换
-  * 是否相等
-* 字符串
-  * 原型方法
+  * Undefined、Null、Boolean、String、Symbol、Numeric 和 Object
+  * [判断数据类型](./2.javascript/js判断数据类型.md)
+* [字符串](./2.javascript/String/String.md)
+  * 注意码元
+  * 常用实例方法
+    * endsWith() 是否以指定字符串结尾，返回 true 或 false
+    * startsWith() 是否以指定字符串开头，返回 true 或 false
+    * includes() 是否存在某个字符串，返回 true 或 false，不支持正则
+    * search() 第一个与之匹配的子串的起始位置，如果没有则返回-1
+    * replaceAll() 匹配并替换字符
+    * split() 分割字符串并返回该数组，注意空字符串分割
+    * slice() 截取字符串
+    * toLowerCase() 转换为小写
+    * toUpperCase() 转换为大写
+    * trim() 去除开头和结尾的空格
 * 数字
-  * 原型方法
+  * 静态方法
+    * Number.isNaN() 判断传入的值是否为 NaN
+  * 实例方法
+    * toFixed() 截取小数点后的位数
 * 数组
-  * 原型方法
+  * 实例方法
   * 详细介绍
   * 常用方法
     * 循环
@@ -104,9 +116,8 @@
 * 对象
 * 函数
 * 正则
-  * 匹配字符
-  * 使用方法
-  * 常用正则
+  * test() 是否存在某个字符串，返回 true 或 false
+  * exec() 发现匹配，就返回一个数组，成员是每一个匹配成功的子字符串，否则返回null。   
 * 全局对象
   * Date
 * BOM
@@ -171,6 +182,9 @@
 * ESLint 
 * Perttier
 * Vitest
+* 命名规范
+* 埋点系统
+* 监控和报警系统
 #### JAVA
 #### JAVA相关
 * spring
@@ -183,3 +197,4 @@
 #### 其他
 * [目录的写法](./other/目录的写法.md)
 * 面试题
+
