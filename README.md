@@ -83,18 +83,22 @@
 * postcss
 * TailwindCSS 
 #### js
+* 运算符
+  * ？？ 如果引用是空值（null 或 undefined），可选链运算符将返回 undefined 而不是导致错误
+  * ？. 当左侧的操作数为 null 或者 undefined 时，返回其右侧操作数，否则返回左侧操作数
 * 数据类型
   * Undefined、Null、Boolean、String、Symbol、Numeric 和 Object
   * [判断数据类型](./2.javascript/js判断数据类型.md)
 * [字符串](./2.javascript/String/String.md)
   * 注意码元
   * 常用实例方法
-    * endsWith() 是否以指定字符串结尾，返回 true 或 false
-    * startsWith() 是否以指定字符串开头，返回 true 或 false
     * includes() 是否存在某个字符串，返回 true 或 false，不支持正则
-    * search() 第一个与之匹配的子串的起始位置，如果没有则返回-1
     * replaceAll() 匹配并替换字符
     * split() 分割字符串并返回该数组，注意空字符串分割
+
+    * endsWith() 是否以指定字符串结尾，返回 true 或 false
+    * startsWith() 是否以指定字符串开头，返回 true 或 false
+    * search() 第一个与之匹配的子串的起始位置，如果没有则返回-1
     * slice() 截取字符串
     * toLowerCase() 转换为小写
     * toUpperCase() 转换为大写
@@ -102,19 +106,32 @@
 * 数字
   * 静态方法
     * Number.isNaN() 判断传入的值是否为 NaN
-  * 实例方法
+  * 常用实例方法
     * toFixed() 截取小数点后的位数
 * 数组
-  * 实例方法
-  * 详细介绍
-  * 常用方法
+  * 静态方法
+    * Array.isArray() 如果参数是数组则返回 true ，否则返回 false
+    * Array.of()  创建一个数组，传入的参数一定都是数组的成员
+  * 常用实例方法
+    * push() pop() unshift() shift()
     * 循环
-    * 去重
-    * 复制
-    * 获取相同元素个数
-    * 对比
+      * forEach()   
+      * map() 返回一个新数组，其中包含对调用数组中的每个元素调用函数的结果
+      * keys() 返回一个新的数组迭代器，其中包含调用数组中每个索引的键
+      * entries() 返回一个新的数组迭代器对象，其中包含数组中每个索引的键/值对
+      * values() 返回一个新的数组迭代器对象，该对象包含数组中每个索引的值。
+    * splice() 从数组中添加和/或删除元素。
+    * sort() 对数组的元素进行排序并返回该数组。
+    * every() 数组中的每个元素都满足测试函数，则返回 true
+    * some() 如果调用数组中至少有一个元素满足提供的测试函数，则返回 true。
+    * filter() 返回一个新数组，其中包含调用所提供的筛选函数返回为 true 的所有数组元素
+    * find() 返回数组中满足提供的测试函数的第一个元素的值，如果没有找到合适的元素，则返回 undefined
+    * includes() 确定调用数组是否包含一个值，根据情况返回 true 或 false
+    * join() 将数组的所有元素连接为字符串。
+* [函数](./2.javascript/Function/Function.md)
+  * [this](./2.javascript/Function/this.md)
+  * async/await
 * 对象
-* 函数
 * 正则
   * test() 是否存在某个字符串，返回 true 或 false
   * exec() 发现匹配，就返回一个数组，成员是每一个匹配成功的子字符串，否则返回null。   
@@ -128,7 +145,6 @@
 * DOM
   * clientWidth:包括padding，不包括border
   * offsetWidth:包含padding和border
-  * 
 * 事件
 * canvas
 * 数据储存
@@ -198,3 +214,5 @@
 * [目录的写法](./other/目录的写法.md)
 * 面试题
 
+#### AI
+* MarsCode 
