@@ -206,12 +206,16 @@
 * spring
 * mysql
 * redis
-#### js博客
+#### js博客  
 * [for in 、for of、forEach的区别](./js/for...in、for...of.md)
 * [在iframe里就重定向顶级窗口](./js/在iframe里就重定向顶级窗口.md)
 * [this的指向](./js/this.md)
 #### 其他
 * [目录的写法](./other/目录的写法.md)
+* [事件循环](./other/事件循环.md)
+  * 进程和线程
+  * 消息队列
+* [浏览器渲染](./other/浏览器渲染.md)
 * 面试题
 
 #### AI
