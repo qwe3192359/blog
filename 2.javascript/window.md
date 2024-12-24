@@ -1,0 +1,4 @@
+window.innerHeight 返回网页在当前窗口中可见部分的高度
+window.innerWidth 返回网页在当前窗口中可见部分的宽度
+
+requestAnimationFrame() 推迟到浏览器下一次重流时执行，执行完才会进行下一次重绘

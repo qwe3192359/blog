@@ -138,6 +138,7 @@
 * 全局对象
   * Date
 * BOM
+  * [window](./js/window.md)
   * history
   * location
   * navigator
@@ -146,10 +147,14 @@
   * clientWidth:包括padding，不包括border
   * offsetWidth:包含padding和border
 * 事件
+* 数据格式及处理
 * canvas
 * 数据储存
 * 设计模式
 * 数据结构
+* [for in 、for of、forEach的区别](./js/for...in、for...of.md)
+* [在iframe里就重定向顶级窗口](./js/在iframe里就重定向顶级窗口.md)
+* [this的指向](./js/this.md)
 #### js相关
 * es6
 * TypeScript
@@ -163,14 +168,15 @@
 * react
   * Ant Design
 * selvet
+* 常用工具插件
+  * lodash
+  * Day.js
 * jQuery
 * mock.js
 * 常用插件
   * axios
-  * lodash
   * ECharts
   * antv
-  * Day.js
   * D3.js
 * webgl、gis
   * leaflet
@@ -185,9 +191,12 @@
   * sheet.js   xlsx
   * mammoth.js word
 #### 前端相关
-* git、svn
+* git
+  * git config core.ignorecase false  让git不忽略大小写
+* svn
 * Node、Bun、Deno
 * npm、pnpm、yarn
+  * depcheck 依赖检查
 * webpack、vite、turbo
 * nginx、tomcat、apache
 * 小程序
@@ -206,17 +215,12 @@
 * spring
 * mysql
 * redis
-#### js博客  
-* [for in 、for of、forEach的区别](./js/for...in、for...of.md)
-* [在iframe里就重定向顶级窗口](./js/在iframe里就重定向顶级窗口.md)
-* [this的指向](./js/this.md)
 #### 其他
 * [目录的写法](./other/目录的写法.md)
 * [事件循环](./other/事件循环.md)
   * 进程和线程
   * 消息队列
 * [浏览器渲染](./other/浏览器渲染.md)
-* 面试题
 
 #### AI
 * MarsCode 
