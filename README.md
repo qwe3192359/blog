@@ -82,6 +82,7 @@
 * sass
 * postcss
 * TailwindCSS 
+* shadcn-ui
 #### js
 * 运算符
   * ？？ 如果引用是空值（null 或 undefined），可选链运算符将返回 undefined 而不是导致错误
@@ -105,6 +106,7 @@
     * trim() 去除开头和结尾的空格
 * 数字
   * 静态方法
+    * Number.isFinite() 判断传入的值是否为有限数，参数不会转换为数字，全局函数 isFinite() 会将参数转换为数字
     * Number.isNaN() 判断传入的值是否为 NaN
   * 常用实例方法
     * toFixed() 截取小数点后的位数
@@ -131,14 +133,29 @@
 * [函数](./2.javascript/Function/Function.md)
   * [this](./2.javascript/Function/this.md)
   * async/await
+  * 实例方法
+    * apply() 调用一个具有给定this值的函数，以及作为一个数组（或类似数组对象）提供的参数。
+    * call() 调用一个具有给定this值的函数，以及以一个数组（或类数组对象）的形式提供的参数。
+    * bind() 创建一个新的函数，在 bind() 被调用时，这个新函数的 this 被指定为 bind() 的第一个参数，而其余参数将作为新函数的参数，供调用时使用。
 * 对象
 * 正则
   * test() 是否存在某个字符串，返回 true 或 false
   * exec() 发现匹配，就返回一个数组，成员是每一个匹配成功的子字符串，否则返回null。   
-* 全局对象
+* 常用内置对象
   * Date
+  * JSON
+  * Math
+  * Map
+  * Proxy
+  * Reflect
+  * Promise
+  * Symbol
+  * Set
+  * WeakSet
+  * Map
+  * WeakMap
 * BOM
-  * [window](./js/window.md)
+  * [window](./2.javascript/window.md)
   * history
   * location
   * navigator
@@ -147,18 +164,18 @@
   * clientWidth:包括padding，不包括border
   * offsetWidth:包含padding和border
 * 事件
-* 数据格式及处理
+  * addEventListener
 * canvas
 * 数据储存
-* 设计模式
-* 数据结构
-* [for in 、for of、forEach的区别](./js/for...in、for...of.md)
-* [在iframe里就重定向顶级窗口](./js/在iframe里就重定向顶级窗口.md)
-* [this的指向](./js/this.md)
+  * localStorage
+  * sessionStorage
+  * Cookie
+  * IndexedDB
+* websocket
+* [在iframe里就重定向顶级窗口](./2.javascript/在iframe里就重定向顶级窗口.md)
 #### js相关
 * es6
 * TypeScript
-* websocket
 * vue
   * vue-router
   * pinia
@@ -168,13 +185,12 @@
 * react
   * Ant Design
 * selvet
-* 常用工具插件
+* 常用插件
   * lodash
   * Day.js
-* jQuery
-* mock.js
-* 常用插件
+  * dayjs
   * axios
+  * mock.js
   * ECharts
   * antv
   * D3.js
@@ -221,6 +237,7 @@
   * 进程和线程
   * 消息队列
 * [浏览器渲染](./other/浏览器渲染.md)
-
+* 设计模式
+* 数据结构
 #### AI
 * MarsCode 
