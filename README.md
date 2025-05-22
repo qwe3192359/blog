@@ -79,7 +79,7 @@
   * meta设置
   * 媒体查询
 #### css相关
-* sass
+* sass、less
 * postcss
 * TailwindCSS 
 * shadcn-ui
@@ -132,6 +132,8 @@
     * join() 将数组的所有元素连接为字符串。
 * [函数](./2.javascript/Function/Function.md)
   * [this](./2.javascript/Function/this.md)
+  * new
+  * 箭头函数
   * async/await
   * 实例方法
     * apply() 调用一个具有给定this值的函数，以及作为一个数组（或类似数组对象）提供的参数。
@@ -142,7 +144,15 @@
   * test() 是否存在某个字符串，返回 true 或 false
   * exec() 发现匹配，就返回一个数组，成员是每一个匹配成功的子字符串，否则返回null。   
 * 常用内置对象
-  * Date
+  * [Date](./2.javascript/Date.md)
+    * 注意时区问题
+    * Date.now() 当前时间的时间戳
+    * new Date()
+      * 月份从 0（1 月）到 11（12 月）
+      * date传0的时候，取到的是上个月的最后一天
+      * new Date(2024, 1, 0).getDate() 获取上个月有多少天
+    * Date.prototype.getTime() 返回时间戳
+    * Date.prototype.toLocaleString() 返回本地时间格式
   * JSON
   * Math
   * Map
@@ -154,6 +164,21 @@
   * WeakSet
   * Map
   * WeakMap
+  * PerformanceObserver
+  * import
+    * 动态导入
+
+  * 异步
+    * xhr、fetch
+    * setTimeout
+    * setInterval
+    * setImmediate
+    * requestAnimationFrame
+    * requestIdleCallback
+    * Promise
+    * async/await
+    * Generator
+    * 流式读取 
 * BOM
   * [window](./2.javascript/window.md)
   * history
@@ -174,21 +199,34 @@
 * websocket
 * [在iframe里就重定向顶级窗口](./2.javascript/在iframe里就重定向顶级窗口.md)
 #### js相关
-* es6
 * TypeScript
+* vue原理
+  * 响应式系统
+  * Composition API
+  * 组件解析、编译、渲染
+  * 虚拟DOM、diff算法
+  * 指令、插槽、props
+  * 生命周期
 * vue
   * vue-router
   * pinia
   * vue-use
   * element-plus
   * vant
+* react原理
+  * 虚拟DOM、fiber、diff算法
+  * jsx
+  * hooks
+  * 生命周期
 * react
   * Ant Design
-* selvet
+* Svelte
+* SolidJS
+* Qwik
+* Astro
 * 常用插件
   * lodash
-  * Day.js
-  * dayjs
+  * dayjs、Date-fns
   * axios
   * mock.js
   * ECharts
@@ -206,6 +244,7 @@
   * tesseract.js 图文识别
   * sheet.js   xlsx
   * mammoth.js word
+* 跨平台Electron、Tauri
 #### 前端相关
 * git
   * git config core.ignorecase false  让git不忽略大小写
@@ -213,8 +252,13 @@
 * Node、Bun、Deno
 * npm、pnpm、yarn
   * depcheck 依赖检查
-* webpack、vite、turbo
+  * nrm
+  * nvm
+* webpack、turbo
+* vite
+  * 
 * nginx、tomcat、apache
+  * [nginx](./4.前端相关/nginx.md)
 * 小程序
 * uniapp、flutter
 * vs code插件
@@ -226,6 +270,10 @@
 * 命名规范
 * 埋点系统
 * 监控和报警系统
+* Monorepo
+* 打包自动化
+* 代码版本管理
+* 发布管理
 #### JAVA
 #### JAVA相关
 * spring
@@ -241,3 +289,23 @@
 * 数据结构
 #### AI
 * MarsCode 
+#### 面试题
+BFC
+手写promise
+async
+防抖节流
+重排重绘
+事件循环机制
+浏览器渲染
+闭包
+原型链
+箭头函数
+深拷贝
+跨域
+浏览器缓存
+事件委托
+this call apply bind
+前端埋点
+权限控制
+Reflect.apply
+#### 

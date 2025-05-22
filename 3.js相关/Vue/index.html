@@ -4,18 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="./vue.global.js"></script>
   </head>
   <body>
-    <div id="app">{{title}}</div>
-    <script>
-      const app = Vue.createApp({
-        data() {
-          return {
-            title: "aaaa",
-          };
-        },
-      }).mount("#app");
+    <div id="app"></div>
+    <div id="app2"></div>
+    <script type="module">
+      // import { reactive } from "./src/index.js";
+      import { reactive, effect } from "./src/index.js";
+
+      const state = reactive({
+        name: "yy",
+        age: 30,
+      });
+
+      const _effect = effect(() => {
+        app.innerHTML = state.name + state.age;
+      });
+
+      setTimeout(() => {
+        state.age++;
+      }, 1000);
+    </script>
+    <script src="./vue.global.js"></script>
+    <script type="module">
+      const state2 = Vue.reactive({
+        name: "yy",
+        age: 30,
+      });
+      Vue.watch(
+        () => [state2.name],
+        () => {
+          console.log(state2.name);
+          app2.innerHTML = state2.name + state2.age;
+        }
+      );
+      state2.name = "wqer";
     </script>
   </body>
 </html>

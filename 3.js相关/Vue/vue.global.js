@@ -12010,6 +12010,7 @@ Make sure to use the production build (*.prod.js) when deploying for production.
      *
      * States that are more likely to be hit are higher up, as a performance improvement.
      */
+    
     parse(input) {
       this.buffer = input;
       while (this.index < this.buffer.length) {
@@ -12160,6 +12161,7 @@ Make sure to use the production build (*.prod.js) when deploying for production.
       this.cleanup();
       this.finish();
     }
+
     /**
      * Remove data that has already been consumed from the buffer.
      */
