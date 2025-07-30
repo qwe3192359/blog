@@ -1,5 +1,5 @@
 #### 数据类型
-基本数据类型包括Number，String，Boolean，Undefined，null，以及es6新增的Symbol。引用数据类型一种Object。
+基本数据类型包括Undefined、Null、Boolean、String、Number、BigInt、Symbol。引用数据类型一种Object。
 其中Number中有NaN、Infinity，
 Object中包含Array、null。
 注意包装类型
@@ -10,7 +10,8 @@ typeof返回的值都是字符串，并且都是小写
 * Boolean返回'boolean'
 * String返回'string'
 * Symbol返回'symbol、'
-* Numeric：Number返回'number'，Bigint返回'bigint'
+* Numeric：Number返回'number'，
+* Bigint返回'bigint'
 * Null、Object返回'object'
 * function返回'function'
 

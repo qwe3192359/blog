@@ -1,29 +1,28 @@
 ### 目录
 
 #### css
-
 * [常用](./1.css/css常用.md)
 * [基础](./1.css/基础.md)
   * em、vw、vh
 * [宽高](./1.css/width.md)
   * width: auto;
     * 充分利用可用空间
-    * fit*content 包裹
-    * min*content 收缩最小
-  * max*width 设置图片最大宽度
-  * box*sizing 改变宽高作用细节
+    * fit-content 包裹
+    * min-content 收缩最小
+  * max-width 设置图片最大宽度
+  * box-sizing 改变宽高作用细节
   * 宽高百分比计算给予内容区域，定位宽高计算相对于 padding box
   * height:100%;父级得有生效的高度值
 * [display](./1.css/display.md)
 * [块级元素](./1.css/块级元素.md)
 * [内联元素](./1.css/内联元素.md)
-  * line*height
-  * vertical*align
+  * line-height
+  * vertical-align
     * baseline：基线对齐，默认值，行内元素基线为 x 下边缘，替换元素为自身的下边缘
-    * 只支持内联元素和 table*cell 元素
+    * 只支持内联元素和 table-cell 元素
 * [替换元素](./1.css/替换元素.md)
-  * object*fit
-  * object*position
+  * object-fit
+  * object-position
 * img
   * sizes
   * srcset
@@ -35,46 +34,42 @@
   * 负值
   * auto 实现居中、右对齐
   * 与定位共同设置垂直居中
-* box*sizing
+* box-sizing
 * [float](./1.css/float.md)
 * [overflow](./1.css/overflow.md)
   * html、textarea 默认可以产生滚动条
 * [position](./1.css/position.md)
-
   * absolute、fixed 大小由位置决定
-  *
-
-* z*index
+* z-index
 * [flex](./1.css/flex.md)
 * [grid](./1.css/grid.md)
 * [文本](./1.css/文本.md)
   * 基线，字母 x 的下边缘
-  *
 * [background](./1.css/background.md)
 * [border](./1.css/border.md)
-  * solid:实现，dashed:虚线
+  * solid:实线，dashed:虚线
   * 默认颜色使用 color 颜色
   * 默认大小 3px
-* [border*radius](./1.css/border*radius.md)
-* [outline 轮廓](./1.css/outline.md)
-* [box*shadow 阴影](./1.css/box*shadow.md)
-* [mask 遮罩](./1.css/mask.md)
-* clip*path
+* [border-radius](./1.css/border-radius.md)
+* [outline轮廓](./1.css/outline.md)
+* [box-shadow阴影](./1.css/box-shadow.md)
+* [mask遮罩](./1.css/mask.md)
+* clip-path
   * 实现不规则图形
 * [表格](./1.css/表格.md)
 * [表单](./1.css/表单.md)
   * label 的 for 属性和表单的 id
 * 焦点元素
   * tabindex
-* [光标状态](./1.css/常用css.md)
-* [pointer*events 指向事件](./1.css/常用css.md)
+* 光标状态
+* pointer-events 指向事件
 * [滚动条](./1.css/滚动条.md)
-* [transition：过渡](./1.css/transition：过渡.md)
+* [transition 过渡](./1.css/transition：过渡.md)
 * [动画](./1.css/常用css.md)
 * [transform：2D、3D 转换](./1.css/transform.md)
   * 旋转
   * 平移
-* pointer*events
+* pointer-events
 * [color](./1.css/color.md)
 * [filter](./1.css/filter.md)
 * [选择器](./1.css/选择器.md)
@@ -85,29 +80,33 @@
   * 媒体查询
 
 #### css 相关
-
 * sass、less
 * postcss
 * TailwindCSS
-* shadcn*ui
+* Shadcn Ui
 
 #### js
-
-* 运算符
-  * ？？ 如果引用是空值（null 或 undefined），可选链运算符将返回 undefined 而不是导致错误
+* 常用运算符
+  * ？？ 一个逻辑运算符，当左侧的操作数为 null 或者 undefined 时，返回其右侧操作数，否则返回左侧操作数
   * ？. 当左侧的操作数为 null 或者 undefined 时，返回其右侧操作数，否则返回左侧操作数
+  * || 在左侧操作数为任何“假值”时返回右侧操作数，否则返回左侧操作数
+  * && 在左侧操作数为任何“假值”时返回左侧操作数，否则返回右侧操作数
+* 语句
+  * for in 遍历对象 (Object) 的可枚举属性名，字符串、数组都可以
+  * for of 遍历集合的元素 (数组、字符串、Map、Set等)，只能遍历实现了 [Symbol.iterator] 的可迭代对象
 * 数据类型
-  * Undefined、Null、Boolean、String、Symbol、Numeric 和 Object
+  * Undefined、Null、Boolean、String、Number、BigInt、Symbol 和 Object
+  * typeof
+    * null返回'object'
+    * 函数返回'function'
   * [判断数据类型](./2.javascript/js判断数据类型.md)
-* [字符串](./2.javascript/String/String.md)
 
+* [字符串](./2.javascript/String/String.md)
   * 注意码元
   * 常用实例方法
-
     * includes() 是否存在某个字符串，返回 true 或 false，不支持正则
     * replaceAll() 匹配并替换字符
     * split() 分割字符串并返回该数组，注意空字符串分割
-
     * endsWith() 是否以指定字符串结尾，返回 true 或 false
     * startsWith() 是否以指定字符串开头，返回 true 或 false
     * search() 第一个与之匹配的子串的起始位置，如果没有则返回*1
@@ -122,12 +121,16 @@
     * Number.isNaN() 判断传入的值是否为 NaN
   * 常用实例方法
     * toFixed() 截取小数点后的位数
+
 * 数组
   * 静态方法
     * Array.isArray() 如果参数是数组则返回 true ，否则返回 false
     * Array.of() 创建一个数组，传入的参数一定都是数组的成员
   * 常用实例方法
-    * push() pop() unshift() shift()
+    * push() 
+    * pop() 
+    * unshift() 
+    * shift()
     * 循环
       * forEach()
       * map() 返回一个新数组，其中包含对调用数组中的每个元素调用函数的结果
@@ -142,6 +145,7 @@
     * find() 返回数组中满足提供的测试函数的第一个元素的值，如果没有找到合适的元素，则返回 undefined
     * includes() 确定调用数组是否包含一个值，根据情况返回 true 或 false
     * join() 将数组的所有元素连接为字符串。
+
 * [函数](./2.javascript/Function/Function.md)
   * [this](./2.javascript/Function/this.md)
   * new
@@ -151,12 +155,25 @@
     * apply() 调用一个具有给定 this 值的函数，以及作为一个数组（或类似数组对象）提供的参数。
     * call() 调用一个具有给定 this 值的函数，以及以一个数组（或类数组对象）的形式提供的参数。
     * bind() 创建一个新的函数，在 bind() 被调用时，这个新函数的 this 被指定为 bind() 的第一个参数，而其余参数将作为新函数的参数，供调用时使用。
-* 对象
-* 正则
-  * test() 是否存在某个字符串，返回 true 或 false
-  * exec() 发现匹配，就返回一个数组，成员是每一个匹配成功的子字符串，否则返回 null。
-* 常用内置对象
+      * 不会立即执行，如果这个函数有其他属性，返回的函数不会有这些属性
+      * 箭头函数没有 this，所以 bind 无效
 
+* 对象
+  * 静态方法
+    * Object.create(); 参数为null可创建一个没有原型链的对象
+    * Object.keys(); 用来返回一个数组，包含对象自身的所有可枚举属性的键名。
+    * Object.values(); 用来返回一个数组，包含对象自身的所有可枚举属性的键值。
+    * Object.entries(); 用来返回一个数组，包含对象自身的所有可枚举属性的键值对。
+    * Object.is(); 用来判断两个值是否严格相等。
+      * 和===的区别，is()两个NaN返回true，+0和-0返回false
+    * Object.hasOwn(); 用来判断对象是否有指定的属性，返回 true 或 false
+
+* 正则
+  * 实例方法
+    * test() 是否存在某个字符串，返回 true 或 false
+    * exec() 发现匹配，就返回一个数组，成员是每一个匹配成功的子字符串，否则返回 null。
+
+* 常用内置对象
   * [Date](./2.javascript/Date.md)
     * 注意时区问题
     * Date.now() 当前时间的时间戳
@@ -175,13 +192,10 @@
   * Symbol
   * Set
   * WeakSet
-  * Map
   * WeakMap
   * PerformanceObserver
   * import
-
     * 动态导入
-
   * 异步
     * xhr、fetch
     * setTimeout
